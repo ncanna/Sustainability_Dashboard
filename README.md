@@ -1,2 +1,2 @@
 # dash-waste
-Interactive web-based app built on Dash framework to communicate UVA sustainability's progress towards solid waste reduction
+Interactive web-based app built using Dash to communicate UVA sustainability's progress towards solid waste reduction
