@@ -22,6 +22,7 @@ Clone the git repo, then install the requirements with pip
 ```
 
 git clone https://github.com/ncanna/dash-waste
+cd dash-waste
 pip install -r requirements.txt
 
 ```
