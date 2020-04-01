@@ -27,25 +27,6 @@ def create_layout(app):
                         [
                             html.Div(
                                 [
-                                    html.H5("Analysis Summary"),
-                                    html.Br([]),
-                                    html.P(
-                                        "\
-                                    Overview.",
-                                        style={"color": "#ffffff"},
-                                        className="row",
-                                    ),
-                                ],
-                                className="product",
-                            )
-                        ],
-                        className="row",
-                    ),
-                    # Row 4
-                    html.Div(
-                        [
-                            html.Div(
-                                [
                                     html.H6(
                                         ["Quick Facts"], className="subtitle padded"
                                     ),
