@@ -12,7 +12,7 @@ PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
 
 
-df_fund_facts = pd.read_csv(DATA_PATH.joinpath("waste.csv"))
+df_waste = pd.read_csv(DATA_PATH.joinpath("waste.csv"))
 
 def create_layout(app):
     # Page layouts
@@ -49,7 +49,7 @@ def create_layout(app):
                                     html.H6(
                                         ["Quick Facts"], className="subtitle padded"
                                     ),
-                                    html.Table(make_dash_table(df_fund_facts)),
+                                    html.Table(make_dash_table(df_waste)),
                                 ],
                                 className="six columns",
                             ),
@@ -79,7 +79,7 @@ def create_layout(app):
                                                         "11.11",
                                                     ],
                                                     marker={
-                                                        "color": "#97151c",
+                                                        "color": "#141E3C",
                                                         "line": {
                                                             "color": "rgb(255, 255, 255)",
                                                             "width": 2,

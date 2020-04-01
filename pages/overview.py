@@ -12,7 +12,7 @@ PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
 
 
-df_fund_facts = pd.read_csv(DATA_PATH.joinpath("waste.csv"))
+df_waste = pd.read_csv(DATA_PATH.joinpath("waste.csv"))
 
 def create_layout(app):
     # Page layouts
@@ -49,7 +49,7 @@ def create_layout(app):
                                     html.H6(
                                         ["Quick Facts"], className="subtitle padded"
                                     ),
-                                    html.Table(make_dash_table(df_fund_facts)),
+                                    html.Table(make_dash_table(df_waste)),
                                 ],
                                 className="six columns",
                             ),
@@ -79,7 +79,7 @@ def create_layout(app):
                                                         "11.11",
                                                     ],
                                                     marker={
-                                                        "color": "#97151c",
+                                                        "color": "#141E3C",
                                                         "line": {
                                                             "color": "rgb(255, 255, 255)",
                                                             "width": 2,
@@ -199,9 +199,9 @@ def create_layout(app):
                                                         "20500",
                                                         "24000",
                                                     ],
-                                                    line={"color": "#97151c"},
+                                                    line={"color": "#E57200"},
                                                     mode="lines",
-                                                    name="Calibre Index Fund Inv",
+                                                    name="Factor 1",
                                                 )
                                             ],
                                             "layout": go.Layout(
@@ -261,8 +261,8 @@ def create_layout(app):
                                         "Image", className="subtitle padded"
                                     ),
                                     html.Img(
-                                        src=app.get_asset_url("https://upload.wikimedia.org/wikipedia/commons/0/0c/F%28x%29_%3D_x%5E3_%E2%88%92_9x.PNG"),
-                                        className="risk-reward",
+                                        src=app.get_asset_url("landfill_waste.jpeg"),
+                                        className="diagram",
                                     ),
                                 ],
                                 className="six columns",

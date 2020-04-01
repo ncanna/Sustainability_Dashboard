@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #fafafa;
   font-size: 1.1rem;
+  font-family: sans-serif;
   line-height: 1.3;
 }
 * {
@@ -13,10 +14,10 @@ body {
 }
 .page {
   position: relative;
-  width: 250mm;
-  min-height: 300mm;
+  width: 300mm;
+  min-height: 100mm;
   padding: 0mm;
-  margin: 10mm auto;
+  margin: 5mm auto;
   border-radius: 5px;
   background: white;
   box-shadow: 0 0 10px lightgrey;
@@ -24,8 +25,8 @@ body {
 
 .pagetwo {
   position: relative;
-  width: 250mm;
-  min-height: 240mm;
+  width: 300mm;
+  min-height: 100mm;
   padding: 0mm;
   margin: 10mm auto;
   border: 1px #d3d3d3 solid;
@@ -34,8 +35,8 @@ body {
 }
 
 .sub_page {
-  padding: 1cm;
-  min-height: 300mm;
+  padding: 0.5cm;
+  min-height: 150mm;
 }
 
 @page {
@@ -134,14 +135,14 @@ h6 {
   margin: 0;
 }
 h5 {
-  font-size: 2.6rem;
+  font-size: 4rem;
 }
 h6 {
   font-size: 1.425rem;
 }
 
-.risk-reward {
-  height: 150px;
+.diagram {
+  height: 200px;
   width: auto;
 }
 
@@ -157,7 +158,7 @@ li {
   padding: 30px;
   margin-bottom: 25px;
   border-radius: 1px;
-  background: #98151b;
+  background: #666666;
   color: #ffffff;
 }
 .full-view-link {
@@ -172,18 +173,32 @@ li {
   transition-duration: 1s;
 }
 .all-tabs {
-  text-align: center;
+  text-align: left;
   font-size: 13px;
-  margin-top: 10px;
+  margin-top: -14px;
+  padding: 0.1cm;
+  background: #232D4B;
+  font-family: "ITC Franklin Gothic LT W01 DmC", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: bolder;
 }
 .main-title {
   position: relative;
-  color: #3a3a3a;
-  font-size: 40px !important;
   width: 80%;
-  border-left: 20px solid #98151b;
-  background: #ffffff;
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 14px 0;
   padding-left: 30px;
+  background-image: url(logo-fade.svg);
+  display: inline-block;
+  background-size: 66%;
+  display: inline-block;
+  font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+  font-weight: bold;
+  color: #232D4B;
+  text-transform: uppercase;
+  line-height: 1.2em;
 }
 
 .subtitle {
@@ -192,7 +207,7 @@ li {
   left: 0;
   height: 20%;
   margin: 0mm;
-  border-left: 5px solid #232D4B;
+  border-left: 5px solid #122789;
   background: #ffffff;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -207,19 +222,20 @@ li {
 }
 
 a:link {
-  color: #E57200;
+  color: #fff;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: #E57200;
+  color: #fff;
   text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-  opacity: 0.6;
+  color: #E57200;
+  opacity: 1;
 }
 
 /* selected link */
@@ -234,12 +250,12 @@ a:active {
 }
 
 .tab {
+  padding: 1em 1.5em;
   border-style: solid;
   border-color: rgb(0, 0, 0, 0.2);
   border-bottom-style: none;
   border-top-style: none;
   border-right-style: none;
-  padding: 5px 10px;
 }
 
 .rowrow {
@@ -288,7 +304,7 @@ a:active {
   .sub_page {
     width: auto;
   }
-  .risk-reward {
+  .diagram {
     height: 120px;
     width: auto;
   }
@@ -309,6 +325,9 @@ a:active {
     width: 55%;
     padding-left: 15px;
     border-left: 15px solid #232D4B;
+  }
+  .full.column {
+    width: 95%;
   }
   .five.columns {
     width: 45%;

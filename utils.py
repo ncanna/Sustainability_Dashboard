@@ -13,20 +13,10 @@ def get_header(app):
                 [
                     html.Div(
                         [html.H5("UVA Sustainability Waste Dashboard")],
-                        className="seven columns main-title",
-                    ),
-                    html.Div(
-                        [
-                            dcc.Link(
-                                "Link",
-                                href="https://sustainability.virginia.edu/",
-                                className="full-view-link",
-                            )
-                        ],
-                        className="five columns",
+                        className="main-title",
                     ),
                 ],
-                className="twelve columns",
+                className="full column",
                 style={"padding-left": "0"},
             ),
         ],
