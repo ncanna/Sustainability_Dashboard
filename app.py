@@ -27,11 +27,10 @@ def display_page(pathname):
         return distributions.create_layout(app)
     elif pathname == "/home":
         return (
-            overview.create_layout(app),
-            distributions.create_layout(app),
+            home.create_layout(app),
         )
     else:
-        return overview.create_layout(app)
+        return home.create_layout(app)
 
 
 if __name__ == "__main__":

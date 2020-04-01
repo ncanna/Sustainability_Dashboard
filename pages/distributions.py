@@ -31,7 +31,7 @@ def create_layout(app):
                                     html.Br([]),
                                     html.P(
                                         "\
-                                    Text.",
+                                    Distributions.",
                                         style={"color": "#ffffff"},
                                         className="row",
                                     ),
