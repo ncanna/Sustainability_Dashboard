@@ -48,6 +48,11 @@ def get_menu():
                 href="/overview",
                 className="tab",
             ),
+            dcc.Link(
+                "Distributions",
+                href="/distributions",
+                className="tab",
+            ),
         ],
         className="row all-tabs",
     )

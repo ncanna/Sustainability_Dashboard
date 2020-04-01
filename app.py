@@ -6,6 +6,7 @@ from dash.dependencies import Input, Output
 from pages import (
     overview,
     distributions,
+    home,
 )
 
 app = dash.Dash(
