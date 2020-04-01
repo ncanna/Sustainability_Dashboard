@@ -21,7 +21,9 @@ app.layout = html.Div(
 # Update page
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def display_page(pathname):
-    if pathname == "/distributions":
+    if pathname == "/overview":
+        return overview.create_layout(app)
+    elif pathname == "/distributions":
         return distributions.create_layout(app)
     elif pathname == "/home":
         return (
