@@ -43,6 +43,11 @@ def get_menu():
                 href="/distributions",
                 className="tab",
             ),
+            dcc.Link(
+                "Radio",
+                href="/radio",
+                className="tab",
+            ),
         ],
         className="row all-tabs",
     )
