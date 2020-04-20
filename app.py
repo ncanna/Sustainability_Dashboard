@@ -4,9 +4,11 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from pages import (
-    overview,
-    distributions,
     home,
+    seasonality,
+    predict,
+    loc,
+    streams,
 )
 
 app = dash.Dash(
@@ -22,14 +24,16 @@ app.layout = html.Div(
 # Update page
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])
 def display_page(pathname):
-    if pathname == "/overview":
-        return overview.create_layout(app)
-    elif pathname == "/distributions":
-        return distributions.create_layout(app)
-    elif pathname == "/home":
-        return (
-            home.create_layout(app),
-        )
+    if pathname == "/home":
+        return home.create_layout(app)
+    elif pathname == "/seasonality":
+        return seasonality.create_layout(app)
+    elif pathname == "/predict":
+        return predict.create_layout(app)
+    elif pathname == "/streams":
+        return streams.create_layout(app)
+    elif pathname == "/loc":
+        return loc.create_layout(app),
     else:
         return home.create_layout(app)
 

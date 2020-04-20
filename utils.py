@@ -24,6 +24,16 @@ def get_header(app):
     )
     return header
 
+#High Level Pages
+#Home
+
+#Team A Pages (Trends)
+#Seasonality
+#Predictions (Normalized for pop. and Not)
+#Location/Heatmap
+
+#Team B Pages (Waste Reduction)
+#Waste Streams
 
 def get_menu():
     menu = html.Div(
@@ -34,15 +44,25 @@ def get_menu():
                 className="tab first",
             ),
             dcc.Link(
-                "Overview",
-                href="/overview",
+                "Seasonality",
+                href="/seasonality",
                 className="tab",
             ),
             dcc.Link(
-                "Distributions",
-                href="/distributions",
+                "Predictions",
+                href="/predict",
                 className="tab",
             ),
+            dcc.Link(
+                "Location Analysis",
+                href="/loc",
+                className="tab",
+            ),
+            dcc.Link(
+                "Waste Streams",
+                href="/streams",
+                className="tab",
+            )
         ],
         className="row all-tabs",
     )
