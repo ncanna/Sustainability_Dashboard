@@ -18,7 +18,7 @@ from utils import Header, make_dash_table
 import pandas as pd
 import pathlib
 
-# get relative data folder
+# fet relative data folder
 PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
 
@@ -42,7 +42,7 @@ def create_layout(app):
                                     html.Br([]),
                                     html.P(
                                         "\
-                                    Home.",
+                                    The University of Virginia has laid out an ambitious 10-year plan to accelerate the University’s sustainability goals across operations, research, curriculum, accountability and engagement – a framework of stewardship and discovery. The 2020-30 UVA Sustainability Plan includes six goals that UVA’s Board of Visitors approved in December, when the University committed to pursuing carbon neutrality by 2030 in partnership with the College of William & Mary. The full 2030 Plan also outlines strategic actions for success and adds four new goals.",
                                         style={"color": "#ffffff"},
                                         className="row",
                                     ),
