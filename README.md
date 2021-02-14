@@ -1,5 +1,5 @@
 # Dash Analytical Web App 
-Interactive web-based app built using Dash to communicate UVA sustainability's progress towards solid waste reduction
+Interactive web-based app built using Dash to communicate UVA sustainability's progress towards solid waste reduction. Data shown is example data for confidentiality purposes.
 
 ## Getting Started
 
